@@ -15,8 +15,7 @@
 }
 aside{
     width: 100%;
-    margin: 0;
-    height: 0px auto;
+    height: auto;
     display: flex;
 }
 .giohang{
@@ -26,18 +25,18 @@ aside{
 }
 .sanphamgiohang{
     width: 65%;
-    height: 100px auto;
+    height: auto;
     padding: 10px;
 }
 .thanhtoan{
     width: 35%;
-    height: 100px;
-    background-color: aquamarine;
+    margin: 10px;
+    text-align: center;
 }
 .khunggiohang{
     width: 100%;
     display: flex;
-    height: 50px auto;
+    height: auto;
     margin-top: 15px;
 }
 .hinh{
@@ -90,4 +89,46 @@ aside{
     width: 20%;
     text-align: right;
     font-size: 11px;
+}
+.boxthanhtoan{
+    width: 100%;
+    border: 1px solid rgb(243, 240, 240);
+    border-radius: 2px;
+    display: flex;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+}
+.thanhtoannho {
+    width: 90%;
+}
+.thanhtoannho label{
+    font-size: 13px;
+}
+.tongtien{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.thanhtoannho button{
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+}
+.thanhtoannho hr{
+    border: 1px dotted black;
+}
+.ghichu{
+    width: 100%;
+    background-color: #f7f2f2;
+    height: auto;
+    padding: 10px;
+}
+.ghichu input{
+    width: 98%;
+    height: 90px;
+    border: none;
+    margin-top: 10px;
 }
