@@ -1,0 +1,149 @@
+body{
+    margin: 0 auto;
+    font-family: "Poppins", Arial, sans-serif;
+
+}
+header{
+    width: 100%;
+}
+.dongdau{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.932);
+    height: 28px;
+    width: 100%;
+}
+.dongdau p {
+    color: white;
+    font-size: 12px;
+    margin: 5px;
+}
+.container{ 
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1170px;
+}
+.container1{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.swe img {
+    width: 120px;
+}
+.seach{
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+}
+.seach input{
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.469);
+    font-size: 12px;
+    border-radius: 3px 0  0 3px;
+    padding-left: 10px;
+    margin: 0;
+    outline: none;
+}
+.seach input:focus {
+    border-color: rgba(0, 0, 0, 0.469);
+}
+.seach button {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    background-color: black;
+}
+.login {
+    margin-left: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-user:before {
+    font-size: 24px; /* Tăng kích thước font */
+    width: 30px; /* Tăng kích thước chiều rộng */
+    height: 30px; /* Tăng kích thước chiều cao */
+}
+.fa-bag-shopping:before, .fa-shopping-bag:before {
+    font-size: 24px; /* Tăng kích thước font */
+    width: 30px; /* Tăng kích thước chiều rộng */
+    height: 30px; /* Tăng kích thước chiều cao */
+}
+
+.login p{
+    font-size: 14px;
+}
+.login i{
+    color: #00000098;
+    height: 23px;
+}
+.login p a{
+    text-decoration: none;
+    color: #00000060;
+}
+.cart {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart p{
+    font-size: 14px;
+}
+.cart i{
+    text-decoration: none;
+    color: #00000098;
+}
+.cart p a{
+    text-decoration: none;
+    color: #00000060;   
+}
+.khungchuamenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    margin-left: 0;
+    font-size: 18px;
+    color: #00000098; 
+    font-family: 'quick sand';
+
+}
+.menu ul {
+    list-style: none;
+    text-align: center;
+     /* Remove default margin */
+}
+.menu ul li {
+    display: inline-block; /* Aligns items in a row */
+    margin-right: 40px; /* Space between items */
+}
+header img{
+    width: 100%;
+}
+
+article{
+    display: flex;
+    background-color: aqua;
+    width: 70%;
+    height: 500px;
+}
+aside{
+    display: flex;
+    background-color: bisque;
+    width: 70%;
+    height: 500px;  
+}
