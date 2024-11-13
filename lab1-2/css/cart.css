@@ -1,0 +1,93 @@
+
+.boxduongdan{
+    width: 100%;
+    background-color: rgb(241, 236, 236);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1 solid #555;
+}
+.duongdan{
+    width: 60%;
+    font-size: 9px;
+    color: #555;
+}
+aside{
+    width: 100%;
+    margin: 0;
+    height: 0px auto;
+    display: flex;
+}
+.giohang{
+    width: 60%;
+    display: flex;
+    height: auto;
+}
+.sanphamgiohang{
+    width: 65%;
+    height: 100px auto;
+    padding: 10px;
+}
+.thanhtoan{
+    width: 35%;
+    height: 100px;
+    background-color: aquamarine;
+}
+.khunggiohang{
+    width: 100%;
+    display: flex;
+    height: 50px auto;
+    margin-top: 15px;
+}
+.hinh{
+    width: 20%;
+}
+.hinh img{
+    width: 100%;
+}
+.tenvagia{
+    width: 60%;
+}
+.tenvagia label{
+    font-size: 11px;
+    
+}
+.quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 65px; /* Điều chỉnh theo kích thước mong muốn */
+    margin-top: 7px;
+}
+
+.quantity-btn {
+    width: 20px;
+    height: 20px;
+    background-color: #f8f8f8;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    color: #333;
+}
+
+.quantity-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-input {
+    width: 20px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+}
+.xoagiohang{
+    width: 20%;
+    text-align: right;
+    font-size: 11px;
+}

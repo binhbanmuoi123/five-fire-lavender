@@ -1,7 +1,6 @@
 body{
     margin: 0 auto;
     font-family: "Poppins", Arial, sans-serif;
-
 }
 header{
     width: 100%;
@@ -103,9 +102,8 @@ header{
 .menu{
     width: 65%;
     margin-left: 0;
-    font-size: 13px;
-    color: #00000098; 
-    font-family: 'quick sand';
+    font-size: 11px;
+    color: #00000098;
 }
 .menu ul {
     list-style: none;
