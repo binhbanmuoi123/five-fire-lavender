@@ -1,6 +1,7 @@
 body{
     margin: 0 auto;
     font-family: "Poppins", Arial, sans-serif;
+    
 
 }
 header{
@@ -16,35 +17,37 @@ header{
 }
 .dongdau p {
     color: rgb(224, 201, 201);
-    font-size: 9px;
+    font-size: 12px;
     margin: 5px;
 }
+
 .container{
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 .container1{
-    height: 50px;
-    width: 60%;
+    height: 70px;
+    width: 70%;
     display: flex;
     align-items: center;
 }
 .swe img {
-    width: 90px;
+    margin-top: 10px;
+    width: 150px;
 }
 .seach{
-    margin-left: 90px;
+    margin-left: 60px;
     display: flex;
     align-items: center;
 }
 .seach input{
-    width: 285px;
-    height: 30px;
+    width: 450px;
+    height: 40px;
     border: 1px solid rgba(0, 0, 0, 0.469);
-    font-size: 9px;
+    font-size: 12px;
     border-radius: 3px 0  0 3px;
     padding-left: 10px;
     margin: 0;
@@ -56,18 +59,18 @@ header{
 .seach button {
     margin: 0;
     width: 40px;
-    height: 30px;
+    height: 40px;
     border-radius: 0 5px 5px 0;
     background-color: black;
 }
 .login {
-    margin-left: 39px;
+    margin-left: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .login p{
-    font-size: 10px;
+    font-size: 14px;
 }
 .login i{
     color: #00000098;
@@ -84,7 +87,7 @@ header{
     justify-content: center;
 }
 .cart p{
-    font-size: 11px;
+    font-size: 14px;
 }
 .cart i{
     text-decoration: none;
@@ -101,11 +104,12 @@ header{
     align-items: center;
 }
 .menu{
+    text-align: center;
     width: 65%;
     margin-left: 0;
-    font-size: 13px;
+    font-size: 16px;
     color: #00000098; 
-    font-family: 'quick sand';
+   
 }
 .menu ul {
     list-style: none;
