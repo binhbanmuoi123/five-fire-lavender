@@ -30,7 +30,11 @@ header{
 }
 .container1{
     height: 70px;
+<<<<<<< HEAD
     width: 60%;
+=======
+    width: 70%;
+>>>>>>> b56c7d9a3f0b0d1bafb850f04d9184f2bc162ac4
     display: flex;
     align-items: center;
 }
@@ -39,14 +43,22 @@ header{
     width: 150px;
 }
 .seach{
+<<<<<<< HEAD
     margin-left: 120px;
+=======
+    margin-left: 60px;
+>>>>>>> b56c7d9a3f0b0d1bafb850f04d9184f2bc162ac4
     display: flex;
     align-items: center;
 }
 .seach input{
     width: 450px;
     height: 40px;
+<<<<<<< HEAD
     border: 1px solid #f7f2f2;;
+=======
+    border: 1px solid rgba(0, 0, 0, 0.469);
+>>>>>>> b56c7d9a3f0b0d1bafb850f04d9184f2bc162ac4
     font-size: 12px;
     border-radius: 3px 0  0 3px;
     padding-left: 10px;
@@ -107,7 +119,11 @@ header{
     text-align: center;
     width: 65%;
     margin-left: 0;
+<<<<<<< HEAD
     font-size: 18px;
+=======
+    font-size: 16px;
+>>>>>>> b56c7d9a3f0b0d1bafb850f04d9184f2bc162ac4
     color: #00000098; 
    
 }
