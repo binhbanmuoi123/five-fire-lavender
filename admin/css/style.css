@@ -8,21 +8,35 @@ body{
     font-size: larger;
 }
 .navbar{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 30px;
     background-color: whitesmoke;
     border-bottom: 2px solid #ddd;
     box-shadow:1px 2px 5px rgba(0, 0, 0, 0.1);
 }
+.allbox{
+    align-items: center;
+    width: 70%;
+    display: flex;    
+}
+.allbox .logo{
+    width: 20%;
+}
+.allbox ul{
+    margin-left: 100px;
+    width: 60%;
+}
+.icon_user{
+    margin-left: 100px;
+    width: 20%;
+}
 .navbar .logo{
     font-size: 30px;
     font-weight: bolder;
-    margin-right: 10px; 
-
 }
-
 .navbar .logo span{
     color: blue;
 }
