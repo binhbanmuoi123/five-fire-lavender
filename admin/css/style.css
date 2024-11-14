@@ -19,12 +19,8 @@ body{
 .navbar .logo{
     font-size: 30px;
     font-weight: bolder;
-    margin-right: 10px; /* Thêm khoảng cách nhỏ giữa logo và các mục tiếp theo */
+    margin-right: 10px; 
 
-}
-
-.navbar i {
-    margin-left: 100px; /* Nếu cần, thêm margin vào biểu tượng user */
 }
 
 .navbar .logo span{
