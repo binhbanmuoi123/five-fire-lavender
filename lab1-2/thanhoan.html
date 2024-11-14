@@ -62,14 +62,80 @@
                 <input type="tel" id="phone" name="phone" placeholder="Số điện thoại">
             </div>
         </div>
+   
             <div class="form-group-address">
        
                 <input type="text" id="address" name="address" placeholder="Địa chỉ">
             </div>
+            <div class="desciption">
             <div class="form-group-province">
                
                 <select id="province" name="province">
+                   
                     <option>Chọn tỉnh / thành</option>
+    <option>An Giang</option>
+    <option>Bà Rịa - Vũng Tàu</option>
+    <option>Bạc Liêu</option>
+    <option>Bắc Giang</option>
+    <option>Bắc Kạn</option>
+    <option>Bắc Ninh</option>
+    <option>Bến Tre</option>
+    <option>Bình Dương</option>
+    <option>Bình Định</option>
+    <option>Bình Phước</option>
+    <option>Bình Thuận</option>
+    <option>Cà Mau</option>
+    <option>Cao Bằng</option>
+    <option>Cần Thơ</option>
+    <option>Đà Nẵng</option>
+    <option>Đắk Lắk</option>
+    <option>Đắk Nông</option>
+    <option>Điện Biên</option>
+    <option>Đồng Nai</option>
+    <option>Đồng Tháp</option>
+    <option>Gia Lai</option>
+    <option>Hà Giang</option>
+    <option>Hà Nam</option>
+    <option>Hà Nội</option>
+    <option>Hà Tĩnh</option>
+    <option>Hải Dương</option>
+    <option>Hải Phòng</option>
+    <option>Hậu Giang</option>
+    <option>Hòa Bình</option>
+    <option>Hưng Yên</option>
+    <option>Khánh Hòa</option>
+    <option>Kiên Giang</option>
+    <option>Kon Tum</option>
+    <option>Lai Châu</option>
+    <option>Lâm Đồng</option>
+    <option>Lạng Sơn</option>
+    <option>Lào Cai</option>
+    <option>Long An</option>
+    <option>Nam Định</option>
+    <option>Nghệ An</option>
+    <option>Ninh Bình</option>
+    <option>Ninh Thuận</option>
+    <option>Phú Thọ</option>
+    <option>Phú Yên</option>
+    <option>Quảng Bình</option>
+    <option>Quảng Nam</option>
+    <option>Quảng Ngãi</option>
+    <option>Quảng Ninh</option>
+    <option>Quảng Trị</option>
+    <option>Sóc Trăng</option>
+    <option>Sơn La</option>
+    <option>Tây Ninh</option>
+    <option>Thái Bình</option>
+    <option>Thái Nguyên</option>
+    <option>Thanh Hóa</option>
+    <option>Thừa Thiên Huế</option>
+    <option>Tiền Giang</option>
+    <option>TP Hồ Chí Minh</option>
+    <option>Trà Vinh</option>
+    <option>Tuyên Quang</option>
+    <option>Vĩnh Long</option>
+    <option>Vĩnh Phúc</option>
+    <option>Yên Bái</option>
                     <!-- Các tùy chọn khác sẽ được thêm vào đây -->
                 </select>
             </div>
@@ -86,38 +152,127 @@
                     <!-- Các tùy chọn khác sẽ được thêm vào đây -->
                 </select>
             </div>
-        
+        </div>
+            <p>Phương thức vận chuyển</p>
             <div class="shipping-method">
-                <p>Phương thức vận chuyển</p>
-                <p>Vui lòng chọn tỉnh / thành để có danh sách phương thức vận chuyển.</p>
+                <input type="radio" id="ship" name="shipping" value="free" checked>
+                <label for="ship">Miễn Phí Vận Chuyển</label>
             </div>
-        
+            <p>Phương thức thanh toán</p>
             <div class="payment-method">
-                <p>Phương thức thanh toán</p>
+          
                 <input type="radio" id="cod" name="payment" value="cod" checked>
                 <label for="cod">Thanh toán khi nhận hàng (COD)</label>
             </div>
         
             <div class="btn-container">
-                <a href="#" class="btn">Giỏ hàng</a>
+                <a href="#" class="btn-giohang">Giỏ hàng</a>
                 <button type="submit" class="btn">Hoàn tất đơn hàng</button>
             </div>
         </form>
         
-        <div class="powered-by">
-            Powered by Haravan
-        </div>
+    
         
         </div>
   
         <div class="box-right">
-      
+            <div class="cart-container">
+                <div class="cart-item">
+                    <div class="item-number">1</div>
+                    <img src="img/sp1.webp" alt="2BAR BABY TEE - BLUE" class="item-image">
+                    <div class="item-info">
+                        <p class="item-name">2BAR BABY TEE - BLUE</p>
+                        <p class="item-size">XS</p>
+                    </div>
+                    <p class="item-price">199,000₫</p>
+                </div>
+                
+                <div class="cart-item">
+                    <div class="item-number">2</div>
+                    <img src="img/sp1.webp" alt="2BAR SHORTS - BLUE" class="item-image">
+                    <div class="item-info">
+                        <p class="item-name">2BAR SHORTS - BLUE</p>
+                        <p class="item-size">S</p>
+                    </div>
+                    <p class="item-price">490,000₫</p>
+                </div>
+            
+                <div class="discount-section">
+                    <input type="text" placeholder="Mã giảm giá" class="discount-code">
+                    <button class="apply-btn">Sử dụng</button>
+                </div>
+            
+                <div class="price-summary">
+                    <div class="summary-item">
+                        <span class="label">Tạm tính: </span>
+                        <span class="value">689,000₫</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Phí vận chuyển</span>
+                        <span class="value">Miễn phí</span>
+                    </div>
+                </div>
+            
+                <div class="total">
+                    <span class="total-label">Tổng cộng</span>
+                 
+                    <span class="total-amount" style="font-size: 20px;">689,000₫</span>
+                </div>
+            </div>
+            
         </div>
 
 
 
 
     </div>
+    <footer>
+        <div class="footer-content">
+            <div class="newsletter">
+                <h4>Nhận khuyến mãi</h4>
+                <form>
+                    <input type="email" placeholder="Nhập email của bạn">
+                    <button type="submit">
+                        <i class="fa fa-envelope"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="footer-sections">
+                <div class="about-us">
+                    <h5>ABOUT US</h5>
+                    <p>Được thành lập vào cuối năm 2016 trong bối cảnh thời trang streetstyle dẫn nhẹn nhóm vào thị trường Việt Nam. Sau 6 năm phát triển, SWE - Street Wear Eazy với slogan Young kids with a mission™ đã chiếm được tình cảm của hầu hết các bạn trẻ yêu mến thời trang đường phố trên khắp cả nước.</p>
+                </div>
+                <div class="policy">
+                    <h5>CHÍNH SÁCH</h5>
+                    <ul>
+                        <li>Chính sách bảo mật</li>
+                        <li>Hướng dẫn mua hàng</li>
+                        <li>Phương thức thanh toán</li>
+                        <li>Chính sách giao nhận - vận chuyển</li>
+                        <li>Chính sách đổi và bảo hành sản phẩm</li>
+                    </ul>
+                </div>
+                <div class="store-info">
+                    <h5>HỆ THỐNG CỬA HÀNG SWE</h5>
+                    <ul>
+                        <li>Store 1: 44A Trần Quang Diệu, Quận 3</li>
+                        <li>Store 2: TNP Lý Tự Trọng, Quận 1</li>
+                        <li>Store 3: TNP Lê Lai, Quận 1</li>
+                        <li>Đại lý phân phối chính hãng: SN 84, Tổ 9, Hoàng Công Chất, P. Mường Thanh, TP Điện Biên</li>
+                    </ul>
+                    <p>0357 420 420</p>
+                    <p>streetweareazy@gmail.com</p>
+                </div>
+                <div class="social">
+                    <h5>FANPAGE</h5>
+                    <img src="img/z5992517442123_37d90b0e615763da46b0c7449303fb0c.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 SWE (STREETWEAREAZY). Powered by Haravan</p>
+        </div>
+    </footer>
     
 </body>
 </html>

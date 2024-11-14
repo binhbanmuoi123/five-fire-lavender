@@ -1,6 +1,6 @@
 .the-title{
     font-size: 24px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .container-default{
     display: flex;
@@ -13,14 +13,14 @@
 }
 .box-left{
     border-top: 1px solid black;
-    height: 500px;
-    width: 60%;
+    height: 650px;
+    width: 55%;
     border-right: 1px solid black;
 }
 .box-right{
     border-top: 1px solid black;
-    height: 500px;
-    width: 40%;
+    height: 650px;
+    width: 45%;
     
 }
 body{
@@ -265,41 +265,88 @@ footer {
     width: 90%;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid rgb(186, 186, 186);
+    border: 1px solid rgb(185, 185, 185);
     height: 45px;
     box-sizing: border-box;
 }
-.form-group-email input{
-    width: 200%; 
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid rgb(186, 186, 186);
-    height: 45px;
-    box-sizing: border-box;
-}
-.form-group-phone input{
-    width: 250px; 
-    
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid rgb(186, 186, 186);
-    height: 45px;
-    box-sizing: border-box;
-}
-.phone-and-email {
-    display: flex;
-    align-items: center;
-
-    gap: 200px; /* Tạo khoảng cách giữa email và sđt */
-}
-
 .form-group-address input{
+  
     width: 90%;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid rgb(186, 186, 186);
+    border: 1px solid rgb(185, 185, 185);
     height: 45px;
     box-sizing: border-box;
+}
+.form-group-email {
+    width: 58.5%; /* hoặc một giá trị phù hợp với bố cục tổng thể */
+}
+.form-group-phone {
+    width: 30%; /* hoặc một giá trị phù hợp với bố cục tổng thể */
+}
+.form-group-email input{
+    width: 100%; 
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    height: 45px;
+    box-sizing: border-box;
+  
+}
+.form-group-phone input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.phone-and-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.form-group-province {
+    width: 28.9%;
+}
+.form-group-district {
+    width: 28.9%;
+}
+.form-group-ward {
+    width: 28.9%;
+}
+.form-group-province select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    height: 45px;
+    box-sizing: border-box;
+}
+.form-group-ward select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    height: 45px;
+    box-sizing: border-box;
+}
+.form-group-district select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.form-group-email input {
+    flex-grow: 1;
+}
+.form-group-phone input {
+    flex-grow: 1;
 }
 .form-group input, .form-group select {
     width: 90%;
@@ -308,11 +355,17 @@ footer {
     box-sizing: border-box;
 }
 .shipping-method, .payment-method {
+    display: flex;
+    width: 90%;
+    justify-content: left;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(185, 185, 185);
     margin-top: 15px;
     text-align: center;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
+
 .btn-container {
     display: flex;
     justify-content: space-between;
@@ -320,9 +373,22 @@ footer {
     margin-top: 15px;
 }
 .btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    padding: 10px 0px;
+    justify-content: left;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #381dcf;
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: 65px;
+}
+.btn-giohang {
+    padding: 10px 0px;
+    justify-content: left;
+    text-decoration: none;
+    color: #381dcf;
     border: none;
     cursor: pointer;
 }
@@ -333,5 +399,112 @@ footer {
     text-align: center;
     margin-top: 15px;
     font-size: 12px;
-    color: #aaa;
+    color: #864f4f;
+}
+.desciption{
+    display: flex;
+   align-items: center;
+
+    gap: 10px;
+}
+ /* giỏ hàng bên phải */
+ .cart-container { 
+    padding-top: 15px;
+    width: 400px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.item-number {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-size {
+    font-size: 12px;
+    color: #666;
+}
+
+.item-price {
+    font-weight: 600;
+    color: #333;
+}
+
+.discount-section {
+    display: flex;
+    margin: 15px 0;
+}
+
+.discount-code {
+    flex-grow: 1;
+    padding: 8px;
+    height: 28px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.apply-btn {
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price-summary, .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.summary-item {
+    font-size: 14px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.total-label {
+    color: #333;
+}
+
+.currency, .total-amount {
+    margin-left: 5px;
 }
