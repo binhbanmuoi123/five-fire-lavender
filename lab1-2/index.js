@@ -15,7 +15,7 @@ function loadProducts() {
                 <div class="price">${product.price.toLocaleString()}₫ <del>${product.originalPrice.toLocaleString()}₫</del></div>
                 <div class="danhgia">
                     ${'<i class="fa-solid fa-star fa-2xs"></i>'.repeat(product.rating)}
-                    <label style="font-size: 9px;">(${product.reviews} lượt đánh giá)</label>
+                    <label style="font-size: 15px;">(${product.reviews} lượt đánh giá)</label>
                 </div>
             </div>
         `;
@@ -36,7 +36,7 @@ function loadMoreProducts() {
                 <div class="price">${product.price.toLocaleString()}₫ <del>${product.originalPrice.toLocaleString()}₫</del></div>
                 <div class="danhgia">
                     ${'<i class="fa-solid fa-star fa-2xs"></i>'.repeat(product.rating)}
-                    <label style="font-size: 9px;">(${product.reviews} lượt đánh giá)</label>
+                    <label style="font-size: 15px;">(${product.reviews} lượt đánh giá)</label>
                 </div>
             </div>
         `;

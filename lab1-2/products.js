@@ -77,7 +77,7 @@ const products = [
         price: 300000,
         originalPrice: 426000,
         rating: 0,
-        reviews: 0
+        reviews: 1
     },
     {
         id: 6,
@@ -93,7 +93,7 @@ const products = [
         price: 270000,
         originalPrice: 385000,
         rating: 0,
-        reviews: 0
+        reviews: 1
     },
     {
         id: 7,
@@ -109,7 +109,7 @@ const products = [
         price: 330000,
         originalPrice: 363000,
         rating: 0,
-        reviews: 0
+        reviews: 1
     },
     {
         id: 8,
@@ -124,8 +124,8 @@ const products = [
         name: "HEARTS TEE - BLACK",
         price: 280000,
         originalPrice: 385000,
-        rating: 0,
-        reviews: 0
+        rating: 4,
+        reviews: 1
     },
     {
         id: 9,
@@ -140,8 +140,8 @@ const products = [
         name: "ILY TEE - CREAM",
         price: 280000,
         originalPrice: 462000,
-        rating: 0,
-        reviews: 0
+        rating: 5,
+        reviews: 1
     },
     {
         id: 10,
@@ -156,8 +156,8 @@ const products = [
         name: "KID TEE - WHITE",
         price: 420000,
         originalPrice: 462000,
-        rating: 0,
-        reviews: 0
+        rating: 2,
+        reviews: 1
     },
     {
         id: 11,
@@ -172,8 +172,8 @@ const products = [
         name: "SIGNATURE TEE - PINK",
         price: 380000,
         originalPrice: 418000,
-        rating: 0,
-        reviews: 0
+        rating: 3,
+        reviews: 1
     },
     {
         id: 12,
@@ -188,8 +188,8 @@ const products = [
         name: "SWEVN TEE - BLACK",
         price: 350000,
         originalPrice: 385000,
-        rating: 0,
-        reviews: 0
+        rating: 5,
+        reviews: 1
     }
     // Thêm các sản phẩm khác vào đây
 ];
