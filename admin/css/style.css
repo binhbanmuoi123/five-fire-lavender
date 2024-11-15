@@ -106,3 +106,73 @@ h1{
 span{
     font-size: 20px;
 }
+form{
+    width: 700px;
+    margin: 20px 250px;
+    padding: 20px;
+    border: 2px black solid;
+}
+.flex{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 20px;
+}
+form button{
+    width: 100%;
+    padding: 15px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0px 0px;
+}
+.boxinput{
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin: 15px 0px 0px;
+}
+.inputbox p{
+    color: #777777;
+    font-size: 17px;
+}
+button{
+    width: calc(25% - 40px);
+    padding: 15px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    max-width: 500px;
+    border: 2px solid #777777;
+    text-align: center;
+    padding: 8px;
+}
+th {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+}
+td img{
+    width: 100px;
+}
+tr span{
+    font-size: 11px;
+}
+.iconsp{
+    display: flex;
+}
+.iconsp a{
+    font-size: 25px;
+    color: #2980b9;
+    margin-left: 15px;
+}
