@@ -1,122 +1,8 @@
-body{
-    margin: 0 auto;
-    font-family: "Poppins", Arial, sans-serif;
 
-}
-header{
-    width: 100%;
-}
-.dongdau{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(30, 30, 30, 0.932);
-    height: 20px;
-    width: 100%;
-}
-.dongdau p {
-    color: rgb(224, 201, 201);
-    font-size: 9px;
-    margin: 5px;
-}
 .container-default{
     width: 70%;
     margin: 0 auto;
 }
-.container1{
-    height: 50px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-}
-.swe img {
-    width: 90px;
-}
-.seach{
-    margin-left: 90px;
-    display: flex;
-    align-items: center;
-}
-.seach input{
-    width: 285px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.469);
-    font-size: 9px;
-    border-radius: 3px 0  0 3px;
-    padding-left: 10px;
-    margin: 0;
-    outline: none;
-}
-.seach input:focus {
-    border-color: rgba(0, 0, 0, 0.469);
-}
-.seach button {
-    margin: 0;
-    width: 40px;
-    height: 30px;
-    border-radius: 0 5px 5px 0;
-    background-color: black;
-}
-.login {
-    margin-left: 39px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.login p{
-    font-size: 10px;
-}
-.login i{
-    color: #00000098;
-    height: 15px;
-}
-.login p a{
-    text-decoration: none;
-    color: #00000060;
-}
-.cart {
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cart p{
-    font-size: 11px;
-}
-.cart i{
-    text-decoration: none;
-    color: #00000098;
-}
-.cart p a{
-    text-decoration: none;
-    color: #00000060;   
-}
-.khungchuamenu{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom:1px solid #c5c3c3;
-}
-.menu{
-    width: 65%;
-    margin-left: 0;
-    font-size: 13px;
-    color: #00000098; 
-  
-}
-.menu ul {
-    list-style: none;
-    margin-left: 0; /* Remove default margin */
-}
-.menu ul li {
-    display: inline-block; /* Aligns items in a row */
-    margin-right: 20px; /* Space between items */
-}
-header img{ 
-    width: 100%;
-}
-
 
 footer {
     background-color: #f5f5f5;
@@ -350,7 +236,7 @@ h1{
     left: 5px;
     color: red; /* Màu chữ trắng */
     padding: 3px 7px;
-    font-size: 9px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
     z-index: 1;
@@ -364,17 +250,17 @@ h1{
 
 .tensp label {
     margin: 0;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .price {
-    font-size: 10px;
+    font-size: 15px;
     color: red;
     margin: 5px 0;
 }
 
 .price del {
-    font-size: 9px;
+    font-size: 13px;
     color: gray;
 }
 
@@ -391,6 +277,6 @@ h1{
 }
 
 .danhgia label {
-    font-size: 9px;
+    font-size: 14px;
     color: gray;
 }
