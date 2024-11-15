@@ -119,6 +119,10 @@ header{
     display: inline-block; /* Aligns items in a row */
     margin-right: 30px; /* Space between items */
 }
+.menu ul li a{
+    text-decoration: none;
+    color: #00000098; 
+}
 header img{
     width: 100%;
 }
