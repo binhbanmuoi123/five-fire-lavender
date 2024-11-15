@@ -30,7 +30,7 @@ header{
 }
 .container1{
     height: 70px;
-    width: 60%;
+    width: 68%;
     display: flex;
     align-items: center;
 }
@@ -131,7 +131,7 @@ aside{
     justify-content: center;
 }
 .odichvu{
-    width: 60%;
+    width: 70%;
     height: 200px;
     display: flex;
 }
@@ -173,7 +173,7 @@ article p::after {
     height: 250px auto;
 }
 .boxsp {
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -255,7 +255,7 @@ article p::after {
 }
 .feedback-section {
     padding: 50px 20px;
-    width: 60%;
+    width: 70%;
     display: flex;
 }
 .khungfb1{
@@ -281,7 +281,7 @@ footer {
 }
 
 .footer-content {
-    width: 60%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
