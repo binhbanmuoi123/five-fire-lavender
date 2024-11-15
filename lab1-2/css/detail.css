@@ -1,9 +1,14 @@
+body{
+    margin: 0 auto;
+    font-family: "Poppins", Arial, sans-serif;
+}
 article{
     
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .boxduongdan{
     width: 100%;
     background-color: rgb(241, 236, 236);
@@ -16,7 +21,6 @@ article{
 .duongdan{
     width: 60%;
     font-size: 9px;
-    color: #555;
 }
 .sanphamchitiet{
     width: 60%;
