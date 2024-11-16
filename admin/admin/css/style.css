@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1170px;
+    height: 1000px;
+    margin: 0 auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: larger;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    background-color: whitesmoke;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.allbox {
+    align-items: center;
+    width: 85%;
+    display: flex;
+}
+
+.allbox .logo {
+    display: flex;
+}
+
+.allbox ul {
+    margin-left: 100px;
+    width: 60%;
+}
+
+.icon_user {
+    margin-left: 200px;
+    width: 20%;
+}
+
+.navbar .allbox .logo {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.navbar .logo span {
+    color: blue;
+}
+
+.navbar ul {
+    list-style: none;
+    gap: 50px;
+    display: flex;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+}
+.admin {
+    font-size: 24pt;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center; 
+    column-gap: 10px;
+    row-gap: 20px; 
+    width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%; 
+    max-width: 250px; 
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.box .nutsua {
+    background-color: #edb157;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size:12pt;
+}
+
+.box .nutxoa {
+    background-color: #e14141;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size:12pt;
+}
+
+.nutchon{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+span{
+    color: #486e99;
+}
