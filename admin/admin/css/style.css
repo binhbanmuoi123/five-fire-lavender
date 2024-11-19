@@ -1,0 +1,57 @@
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center; 
+    column-gap: 10px;
+    row-gap: 20px; 
+    width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%; 
+    max-width: 250px; 
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.box .nutsua {
+    background-color: #edb157;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size:12pt;
+}
+
+.box .nutxoa {
+    background-color: #e14141;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size:12pt;
+}
+
+.nutchon{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+span{
+    color: #486e99;
+}
