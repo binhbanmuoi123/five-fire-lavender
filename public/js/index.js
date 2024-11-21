@@ -2,6 +2,7 @@ function arr_Detall(id) {
     sessionStorage.setItem('id_chitiet', id);
     location.href = "detail.html";
 }
+
 // Tải 4 sản phẩm đầu tiên vào trang
 function loadProducts() {
     const loadspContainer = document.getElementById('loadsp');
@@ -10,7 +11,7 @@ function loadProducts() {
         const productHTML = `
             <div class="sp">
                 <div class="sale">${product.sale}%</div>
-                <a href="#" onclick = "arr_Detall(${product.id})" ><img src="${product.image}" alt="${product.name}"></a>
+                <a href="#" onclick="arr_Detall(${product.id})"><img src="public/img/${product.image}" alt="${product.name}"></a>
                 <div class="tensp"><label>${product.name}</label></div>
                 <div class="price">${product.price.toLocaleString()}₫ <del>${product.originalPrice.toLocaleString()}₫</del></div>
                 <div class="danhgia">
@@ -31,7 +32,7 @@ function loadMoreProducts() {
         const productHTML = `
             <div class="sp">
                 <div class="sale">${product.sale}%</div>
-                <a href="#" onclick = "arr_Detall(${product.id})" ><img src="${product.image}" alt="${product.name}"></a>
+                <a href="#" onclick="arr_Detall(${product.id})"><img src="public/img/${product.image}" alt="${product.name}"></a>
                 <div class="tensp"><label>${product.name}</label></div>
                 <div class="price">${product.price.toLocaleString()}₫ <del>${product.originalPrice.toLocaleString()}₫</del></div>
                 <div class="danhgia">
