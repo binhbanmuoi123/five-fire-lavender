@@ -21,8 +21,8 @@ function loadProductDetail() {
         <div class="mota">
             <label for="" style="font-weight: bold;">${product.name}</label>
             <div class="danhgia">${'<i class="fa-solid fa-star fa-2xs"></i>'.repeat(product.rating)}
-                <label for="" style="font-size: 9px;">(${product.reviews} lượt đánh giá)</label></div>
-            <div class="danhgia"><label for="" style="font-size: 9px;">SKU: KIDAOWHS</label></div>
+                <label for="" style="font-size: 14px;">(${product.reviews} lượt đánh giá)</label></div>
+            <div class="danhgia"><label for="" style="font-size: 14px;">SKU: KIDAOWHS</label></div>
             <hr>    
             <div class="price">
                 <div class="giamgia">${product.sale}%</div>
@@ -43,7 +43,7 @@ function loadProductDetail() {
                 <button type="button">THÊM VÀO GIỎ</button>
             </div>
             <div class="thongso">
-                <b style="font-size: 9px;">Mô tả</b><br>
+                <b style="font-size: 14px;">Mô tả</b><br>
                 <label for="">| SWE® | KID TEE <br>
                     COLOR: WHITE <br>
                     MATERIAL: COTTON 100% <br>
