@@ -1,6 +1,6 @@
 function arr_Detall(id) {
     sessionStorage.setItem('id_chitiet', id);
-    location.href = "detail.html";
+    location.href = "v_cart.php";
 }
 
 // Tải 4 sản phẩm đầu tiên vào trang

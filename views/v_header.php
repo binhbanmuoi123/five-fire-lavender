@@ -15,6 +15,8 @@
       echo ' <link rel="stylesheet" href="public/css/dangky.css">';
     }elseif ($_GET['mod'] == 'product') {
       echo ' <link rel="stylesheet" href="public/css/newarrival.css">';
+    }elseif ($_GET['mod'] == 'cart') {
+      echo ' <link rel="stylesheet" href="public/css/cart.css">';
     }
   ?>
 </head>
