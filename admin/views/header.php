@@ -21,6 +21,20 @@
             </ul>
         </nav>
         <div class="icons">
-            <a href="#" class="fas fa-user"></a>
+            <input type="checkbox" name="" id="user-btn">
+            <label for="user-btn"class="fas fa-user"></label>
+            <div class="box-user">
+                <h1>admin</h1>
+                <div class="div-button">
+                <button-u>update profile</button-u>
+                </div>
+                <div class="div-button">
+                <button-1>register</button-1>
+                <button-1>login</button-1>
+                </div>
+                <div class="div-button">
+                <button-d>delete</button-d>
+                </div>
+            </div>
         </div>
     </header>

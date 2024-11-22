@@ -24,13 +24,13 @@ body{
   list-style-type: none;
 }
 
-.icons a{
+.icons label{
     font-size: 25px;
     color: #444444;
     margin-left: 15px;
 }
 
-.icons a:hover{
+.icons label:hover{
     color: #2980b9;
 }
 header{
@@ -221,6 +221,13 @@ button:hover{
 .box span{
     color: #2980b9;
 }
+header .div-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px 0px;
+}
 .div-button{
     width: 100%;
     display: flex;
@@ -231,6 +238,15 @@ button:hover{
     width: 50%;
     padding: 12px;
     background-color: #f39c12;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+.div-button button-u{
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9;
     text-align: center;
     border-radius: 5px;
     color: white;
@@ -341,4 +357,24 @@ select{
     display: grid;
     place-items: center;
     height: 100vh;
+}
+.icons #user-btn{
+    display: none;
+}
+.box-user{
+    position: absolute;
+    width: 300px;
+    background-color: #ffffff;
+    border: black 2px solid;
+    border-radius: 5px;
+    top: 80px;right: 19%;
+    padding: 20px;
+    display: none;
+}
+header #user-btn:checked ~ .box-user{
+    display: block;
+}
+.box-user h1{
+    font-size: 16px;
+    padding: 0px;
 }
