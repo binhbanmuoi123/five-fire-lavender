@@ -32,5 +32,8 @@
         case 'register':
             include_once 'views/register.php';
             break;
+        case 'login':
+            include_once 'views/login.php';
+            break;
     }
 ?>
