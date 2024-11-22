@@ -5,7 +5,7 @@
                 <div class="box-c">
                     <p>add new admin</p>
                     <div class="div-button">
-                        <button-r><a href="index.php?trang=update_pr">Register admin</a></button-r>
+                        <button-r><a href="index.php?trang=register">Register admin</a></button-r>
                     </div>
                 </div>
                 <div class="box-c">
@@ -47,3 +47,5 @@
             </div>
         </div>
     </main>
+</body>
+</html>
