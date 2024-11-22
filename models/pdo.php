@@ -2,7 +2,7 @@
 // Kết nối đến CSDL sử dụng PDO
 function pdo_connect() {
     $servername = "localhost";
-    $database = "lavander";
+    $database = "lavender";
     $username = "root";
     $password = "";
     try {

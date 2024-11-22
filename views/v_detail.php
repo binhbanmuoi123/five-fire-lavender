@@ -1,8 +1,4 @@
-<script>
-    // Đảm bảo hình ảnh đi theo khi cuộn
-<?php print_r($getProductRandom) ?>
 
-</script>
 <div class="boxduongdan">
         <div class="duongdan">
             <label for="">Trang chủ - / - TOPS - / - KID TEE - WRITE</label>
@@ -27,7 +23,7 @@
             <div class="mota">
                 <label style="font-weight: bold;"><?= $productDetail['name'] ?></label>
                 <div class="danhgia">
-                    <i class="fa-solid fa-star fa-2xs"></i> product.rating
+                    <i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i> 
                     <label style="font-size: 14px;">5 lượt đánh giá</label>
                 </div>
                 <div class="danhgia">
@@ -52,7 +48,8 @@
                     <button type="button" onclick="updateQuantity(1)">+</button>
                 </div>
                 <div class="themvaogiohang">
-                    <button type="button">THÊM VÀO GIỎ</button>
+                    
+                    <button type="button"><a href="?mod=cart&act=addtocart&id=<?= $sp['id'] ?>">THÊM VÀO GIỎ</a></button>
                 </div>
                 <div class="thongso">
                     <b style="font-size: 14px;">Mô tả</b><br>
