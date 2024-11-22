@@ -26,14 +26,14 @@
             <div class="box-user">
                 <h1>admin</h1>
                 <div class="div-button">
-                <button-u>update profile</button-u>
+                <button-u><a href="index.php?trang=update_pr">update profile</a></button-u>
                 </div>
                 <div class="div-button">
-                <button-1>register</button-1>
-                <button-1>login</button-1>
+                <button-1><a href="index.php?trang=register">register</a></button-1>
+                <button-1><a href="index.php?trang=login">login</a></button-1>
                 </div>
                 <div class="div-button">
-                <button-d>delete</button-d>
+                <button-d><a href="index.php?trang=login">logout</a></button-d>
                 </div>
             </div>
         </div>
