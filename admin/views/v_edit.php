@@ -1,5 +1,5 @@
 <h1>Update Product</h1>
-<form action="?mod=admin-product&act=update" method="post" enctype="multipart/form-data">
+<div class="form2"><form action="?mod=admin-product&act=update" method="post"  enctype="multipart/form-data">
     <!-- Lưu ID sản phẩm -->
     <input type="hidden" name="id" value="<?=$productEdit['id']?>">
 
@@ -68,3 +68,4 @@
         <button class="back-btn" type="button" onclick="window.history.back()">Go Back</button>
     </div>
 </form>
+</div>

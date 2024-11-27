@@ -12,7 +12,7 @@ if (isset($_GET['act'])) {
             include_once 'views/header.php';
   
             if(isset($_POST['dongythanhtoan'])){
-                // lấy tt insert vào database
+                // lấy tt in    sert vào database
              
         }
             include_once 'views/footer.php';

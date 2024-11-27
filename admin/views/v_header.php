@@ -17,7 +17,7 @@
                 <a href="index.php?trang=orders">orders</a>
                 <a href="?mod=admin-admin&act=admin">admins</a>
                 <a href="?mod=admin-user&act=user">users</a>
-                <a href="index.php?trang=messages">messages</a>
+                <a href="?mod=admin-category&act=category">category</a>
             </ul>
         </nav>
         <div class="icons">
@@ -38,3 +38,4 @@
             </div>
         </div>
     </header>
+    

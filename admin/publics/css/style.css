@@ -139,6 +139,14 @@ form{
     border-radius: 7px;
     background-color: #ffffff;
 }
+.form2 form{
+    width: 700px;
+    margin: 20px 420px;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
 .flex{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
@@ -296,6 +304,15 @@ header .div-button{
     color: white;
     font-size: 18px;
 }
+.div-button button-t{
+    width: 100%;
+    padding: 12px;
+    background-color: #6aaedc;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
 .div-button button-d{
     width: 100%;
     padding: 12px;
@@ -307,6 +324,9 @@ header .div-button{
 }
 .div-button button-r:hover{
     background-color: #444444;
+}
+.div-button button-t:hover{
+    background-color: #ff960dfd;
 }
 .div-button button-d:hover{
     background-color: #444444;
@@ -385,4 +405,62 @@ header #user-btn:checked ~ .box-user{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+}
+.thumbnail-images img {
+    width: 80px; /* Điều chỉnh kích thước hình nhỏ */
+    height: 80px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.image-preview img {
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #ccc; 
+}
+.thumbnail-images img:hover {
+    border-color: #2980b9; 
+    transform: scale(1.1); 
+    transition: 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.update-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}
+
+.back-btn {
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #e0a800;
 }

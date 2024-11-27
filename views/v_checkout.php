@@ -8,7 +8,7 @@
                 <strong> > </strong> Thông tin giao hàng
             </p>
             <h4 style="font-weight: 200;">Thông Tin Giao Hàng</h4>
-
+            
             <!-- Phần thông tin người dùng -->
             <div class="form-group-name">
                 <input type="text" id="name" name="name" placeholder="Họ và tên" >

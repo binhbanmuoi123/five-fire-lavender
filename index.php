@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(!isset($_SESSION['cart'])){
+    $_SESSION['cart'] = array();
+}
 // sử dungj để điều hướng các controller
 // sử dụng controller để tiếp cận người dung
 $baseUrl= 'http://localhost/lanvender/';
@@ -26,6 +29,9 @@ if (isset($_GET['mod'])) {
             break;
             case 'detail':
             include_once 'controllers/c_detail.php';
+            break;
+            case 'checkout':
+            include_once 'controllers/c_checkout.php';
             break;
             // tương tự controllers page điều hương về cart
         

@@ -33,3 +33,12 @@ function userRegister($name,$phone,$email,$password){
     pdo_execute($sql,$name,$phone,$email,md5($password));
 
 }
+function getUserId($id) {
+    // ID của danh mục mà bạn muốn lấy sản phẩm, ở đây là `1`.
+
+    // Câu lệnh SQL để lấy sản phẩm với categories_id = 1
+    $sql = "SELECT * FROM users WHERE id = :?";
+
+    // Truyền giá trị tham số vào hàm pdo_getAll
+    return pdo_getAll($sql,$id);
+}
