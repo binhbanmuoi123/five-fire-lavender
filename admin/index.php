@@ -37,6 +37,9 @@ if (isset($_GET['mod'])) {
             case 'admin-messages':
             include_once 'controllers/c_messages.php';
             break;
+            case 'admin-category':
+            include_once 'controllers/c_category.php';
+            break;
             // tương tự controllers page điều hương về cart
         
         default:
