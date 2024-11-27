@@ -20,7 +20,7 @@ if (isset($_GET['act'])) {
                 if ($user['is_admin']) {
                     // Nếu là admin
                     echo 'Đăng nhập thành công với tư cách Admin.';
-                    header("location: ?mod=admin&act=dashboard");
+                    header("location:admin/?mod=admin-home&act=home");
                 } else {
                     // Nếu là người dùng thông thường
                     echo 'Đăng nhập thành công với tư cách người dùng.';

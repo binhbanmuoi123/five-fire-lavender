@@ -2,7 +2,7 @@
 // Kết nối đến CSDL sử dụng PDO
 function pdo_connect() {
     $servername = "localhost";
-    $database = "lavender";
+    $database = "lavander";
     $username = "root";
     $password = "";
     try {
@@ -90,6 +90,17 @@ function pdo_getValue($sql, $params = []) {
         $stmt->execute($params);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         return $row ? array_values($row)[0] : null; // Kiểm tra null trước khi trả về giá trị
+    } catch (PDOException $e) {
+        throw $e;
+    } finally {
+        unset($conn);
+    }
+}
+function pdo_executehehee($sql, $params = []) {
+    try {
+        $conn = pdo_connect();
+        $stmt = $conn->prepare($sql);
+        return $stmt->execute($params); // Truyền mảng tham số vào đây
     } catch (PDOException $e) {
         throw $e;
     } finally {

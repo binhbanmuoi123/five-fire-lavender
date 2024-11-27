@@ -35,7 +35,7 @@
             <p>FOR THE YOUTH</p>
             <div class="boxspto">
         <div class="boxsp" >
-            <?php foreach($getProductIndex as $product): ?>
+        <?php foreach($getProductIndex as $product): ?>
             <div class="sp">
                 <div class="sale">23%</div>
                 <a href="?mod=detail&act=detail&id=<?=$product['id']?>">
@@ -44,8 +44,11 @@
                 <div class="price" ><?=number_format($product['price'])?> <del><?=$product['oldprice']?></del></div>
                 <div class="danhgia"><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i>
     <label for="" style="font-size: 9px;">(1 lượt đánh giá)</label></div>
+
+    
             </div>
             <?php endforeach; ?>
+       
             <!-- <div class="sp"> -->
                 <!-- <div class="sale">23%</div>
                 <img src="public/img/sp1.webp" alt="">
@@ -125,7 +128,8 @@
             <?php foreach($getProductIndex as $product): ?>
             <div class="sp">
                 <div class="sale">23%</div>
-                <img src="public/img/<?=$product['image_01']?>" alt="">
+                <a href="?mod=detail&act=detail&id=<?=$product['id']?>">
+                <img src="public/img/<?=$product['image_01']?>" alt=""></a>
                 <div class="tensp" ><label><?=$product['name']?></label></div>
                 <div class="price" ><?=number_format($product['price'])?> <del><?=$product['oldprice']?></del></div>
                 <div class="danhgia"><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i><i class="fa-solid fa-star fa-2xs" style="color: #ff4d4f;"></i>

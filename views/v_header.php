@@ -21,6 +21,9 @@
     elseif ($_GET['mod'] == 'detail') {
       echo ' <link rel="stylesheet" href="public/css/detail.css">';
     }
+    elseif ($_GET['mod'] == 'checkout') {
+      echo ' <link rel="stylesheet" href="public/css/thanhtoan.css">';
+    }
   ?>
 </head>
 

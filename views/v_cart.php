@@ -9,28 +9,26 @@
                         <label for="">Có <b>3 sản phẩm</b> trong giỏ hàng</label>
                     </div>
                 </div>
+                <?php foreach($cartProducts as $product): ?>
                 <div class="khunggiohang">
                     <div class="hinh">
-                        <img src="public/img/sp10.webp" alt="">
+                        <img src="public/img/<?=$product['image_01']?>" alt="">
                     </div>
                     <div class="tenvagia">
-                        <label for=""><b>STAR PLUSH CHARM - WHITE</b></label>
+                        <label for=""><b><?=$product['name']?></b></label>
                         <div class="duongdan" style="padding-top: 7px;">
-                            <label for="">70,000₫</label>
+                            <label for=""><?=$product['price']?>₫</label>
                             </div>
-                        <div class="quantity-control">
-                            <button class="quantity-btn">-</button>
-                            <input type="text" class="quantity-input" value="1" readonly>
-                            <button class="quantity-btn">+</button>
-                        </div>
+                        
                         
                     </div>
                     <div class="xoagiohang">
-                        <i class="fa-solid fa-delete-left"></i><br><br>
-                        <label for=""><b>70,000₫</b></label>
+                        <a href="?mod=cart&act=delete&id=<?=$product['id']?>"><i class="fa-solid fa-delete-left"></i></a><br><br>
+                        <label for=""><b><?=$product['price']*$product['quantity']?>₫</b></label>
                     </div>
                 </div> <hr>
-                <div class="khunggiohang">
+                <?php endforeach; ?>
+                <!-- <div class="khunggiohang">
                     <div class="hinh">
                         <img src="public/img/sp10.webp" alt="">
                     </div>
@@ -71,7 +69,7 @@
                         <i class="fa-solid fa-delete-left"></i><br><br>
                         <label for=""><b>70,000₫</b></label>
                     </div>
-                </div> 
+                </div>  -->
                 <div class="khunggiohang">
                     <div class="ghichu">
                         <b style="font-size: 12px; color: gray;">Ghi chú đơn hàng</b><br>
@@ -87,7 +85,7 @@
                         <div class="chutongtien" style="font-size: 12px; color: gray;"><b>Tổng tiền</b></div>
                         <div class="sotongtien" style="font-size: 16px; color: red;"><b>210.000₫</b></div>
                     </div><hr>
-                    <button>THANH TOÁN</button>
+                    <a href="?mod=checkout&act=checkout"><button>THANH TOÁN</button></a>
                 </div>
             </div>
             <label for="" style="color: gray; font-size: 12px;"><i class="fa-solid fa-share"></i> Tiếp tục mua hàng</label>
