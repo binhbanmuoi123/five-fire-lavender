@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../admin"
+		},
+		{
+			"path": "../controllers"
+		},
+		{
+			"path": "../models"
+		},
+		{
+			"path": "../public"
+		},
+		{
+			"path": "../template"
+		},
+		{
+			"path": "."
+		}
+	]
+}
