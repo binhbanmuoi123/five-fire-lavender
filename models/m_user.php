@@ -42,3 +42,55 @@ function getUserId($id) {
     // Truyền giá trị tham số vào hàm pdo_getAll
     return pdo_getAll($sql,$id);
 }
+function getUserByEmail($email) {
+    $sql = "SELECT * FROM users WHERE email = ?";
+    return pdo_getOne($sql, $email);
+}
+
+function updatePasswordByEmail($email, $newPassword) {
+    $sql = "UPDATE users SET password = ? WHERE email = ?";
+    return pdo_execute($sql, md5($newPassword), $email);
+}
+function sendNewPasswordEmail($email, $newPassword) {
+    require "PHPMailer-master/src/PHPMailer.php";
+    require "PHPMailer-master/src/SMTP.php";
+    require 'PHPMailer-master/src/Exception.php';
+
+    $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+
+    try {
+        $mail->SMTPDebug = 0;
+        $mail->isSMTP();
+        $mail->CharSet = "utf-8";
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = '123trongvinh456@gmail.com';
+        $mail->Password = 'vjmuvhgitmjrfatc'; // App-specific password
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+
+        $mail->setFrom('123trongvinh456@gmail.com', 'Lavender');
+        $mail->addAddress($email);
+        $mail->isHTML(true);
+        $mail->Subject = 'Thư gửi lại mật khẩu';
+        $mail->Body = "<p>Lavender chào bạn,</p>
+            <p>Yêu cầu đặt lại mật khẩu của bạn đã được xử lý.</p>
+            <p>Mật khẩu mới của bạn là: <strong>{$newPassword}</strong></p>
+            <p>Vui lòng đăng nhập và thay đổi mật khẩu của bạn ngay.</p>
+            <p>Trân trọng,</p>
+            <p>Đội ngũ hỗ trợ</p>";
+
+        $mail->smtpConnect([
+            "ssl" => [
+                "verify_peer" => false,
+                "verify_peer_name" => false,
+                "allow_self_signed" => true,
+            ]
+        ]);
+
+        $mail->send();
+        return true;
+    } catch (Exception $e) {
+        return false;
+    }
+}

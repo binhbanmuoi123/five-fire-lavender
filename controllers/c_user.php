@@ -58,12 +58,36 @@ if (isset($_GET['act'])) {
             }
             break;
 
-        case 'forgot':
-            include_once 'views/v_header.php';
-            include_once 'views/v_forgotpassword.php';
-            include_once 'views/v_footer.php';
-            break;
-
+            case 'forgot':
+                include_once 'views/v_header.php';
+                include_once 'views/v_forgotpassword.php';
+                include_once 'views/v_footer.php';
+                break;
+    
+            case 'post-forgot':
+                include_once "models/m_user.php";
+                $email = $_POST['email'];
+                $user = getUserByEmail($email);
+    
+                if (!$user) {
+                    $_SESSION['alert'] = "Email bạn nhập chưa đăng ký thành viên.";
+                    header("location: ?mod=user&act=forgot");
+                } else {
+                    $newPassword = substr(md5(rand(0, 9999999)), 0, 8);
+                    if (updatePasswordByEmail($email, $newPassword)) {
+                        if (sendNewPasswordEmail($email, $newPassword)) {
+                            $_SESSION['success'] = "Mật khẩu mới đã được gửi đến email của bạn.";
+                            header("location: ?mod=user&act=login");
+                        } else {
+                            $_SESSION['alert'] = "Đã xảy ra lỗi khi gửi email.";
+                            header("location: ?mod=user&act=forgot");
+                        }
+                    } else {
+                        $_SESSION['alert'] = "Đã xảy ra lỗi khi cập nhật mật khẩu.";
+                        header("location: ?mod=user&act=forgot");
+                    }
+                }
+                break;
         default:
             break;
     }
